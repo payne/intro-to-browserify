@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import _ from 'lodash';
+import 'bootstrap';
 import displayOwners from './display_owners'
 
   const startAt = _.random(1, 5000);
