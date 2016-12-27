@@ -4,7 +4,9 @@
   "description": "The companion code for the course \"Intro to Browserify.\"",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "build:app": "browserify -t babelify -p [ minifyify --no-map ] src/app.js -o  build/app.bundle.js",
+    "build": "npm run build:app"
   },
   "repository": {
     "type": "git",
